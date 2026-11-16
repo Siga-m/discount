@@ -2,19 +2,15 @@ api_version = "2026-07"
 
 [[extensions]]
 name = "t:name"
-handle = "tier-discount"
+handle = "discount-customer"
 type = "function"
-uid = "04060774-5542-a5a7-0a24-791536ea9a541c90a022"
+uid = "0c35173e-6aa4-4f12-d5de-6354878a8686dfe93481"
 description = "t:description"
 
   [[extensions.targeting]]
   target = "cart.lines.discounts.generate.run"
-  input_query = "src/cart_lines_discount_generate.graphql"
-  export = "cart-order-discount"
-
-  [extensions.ui]
-  handle = "tier-discount-ui"
-  enable_create = true
+  input_query = "src/cart_lines_discounts_generate_run.graphql"
+  export = "cart-lines-discounts-generate-run"
 
   [extensions.build]
   command = ""

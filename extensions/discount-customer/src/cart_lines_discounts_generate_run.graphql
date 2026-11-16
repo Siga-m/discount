@@ -1,0 +1,27 @@
+query CartInput {
+  cart {
+    lines {
+      id
+      cost {
+        subtotalAmount {
+          amount
+        }
+      }
+    }
+    buyerIdentity {
+    email
+    customer {
+    email
+    numberOfOrders
+    firstName
+    hasTags(tags: ["VIP"]){
+    hasTag
+    tag
+    }
+    }
+    }
+  }
+  discount {
+    discountClasses
+  }
+}

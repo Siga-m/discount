@@ -39,7 +39,7 @@ importers:
         specifier: ~2026.10.0
         version: 2026.10.0(@preact/signals@2.11.4(preact@10.29.8))(preact@10.29.8)
 
-  extensions/tier-discount:
+  extensions/discount-customer:
     dependencies:
       '@shopify/shopify_function':
         specifier: ^2.0.1
@@ -51,18 +51,6 @@ importers:
       vitest:
         specifier: ^3.2.4
         version: 3.2.7(@types/node@26.6.6)(jiti@2.7.0)(supports-color@7.2.0)(yaml@2.9.1)
-
-  extensions/tier-discount-ui:
-    dependencies:
-      '@preact/signals':
-        specifier: ^2.3.x
-        version: 2.11.4(preact@10.29.8)
-      '@shopify/ui-extensions':
-        specifier: ~2026.01.0
-        version: 2026.1.5(@preact/signals@2.11.4(preact@10.29.8))(preact@10.29.8)
-      preact:
-        specifier: ^10.10.x
-        version: 10.29.8(preact-render-to-string@6.8.3)
 
 packages:
 
@@ -1198,17 +1186,6 @@ packages:
 
   '@shopify/shopify_function@2.0.1':
     resolution: {integrity: sha512-MEqIm1RJuF28ppuOqXpPeJ3SDSowtgmDGS5GYZ5j85izovmQ2HxK0oFKZyjmfYMvzZairRKVvHp+YYdPdqdp4g==}
-
-  '@shopify/ui-extensions@2026.1.5':
-    resolution: {integrity: sha512-vDWYOtEcMT/Jm4s8Fe8iZVoRiLNwG5DbC0kqfrFRTcPD2D6mvkL+e3MYc4LfrTV4dPCCqBjSvfMpa8fK33fDFA==}
-    peerDependencies:
-      '@preact/signals': '*'
-      preact: '*'
-    peerDependenciesMeta:
-      '@preact/signals':
-        optional: true
-      preact:
-        optional: true
 
   '@shopify/ui-extensions@2026.10.0':
     resolution: {integrity: sha512-/wYUQ5XQf0jNCmA4GxTFe6Gh4pfMmPnbza0ch3B/6gqLeFvry0g784wo7Dq7n6sQuTnJfLtMEpRfwXmIpzLcpQ==}
@@ -4085,13 +4062,6 @@ snapshots:
       - graphql-sock
       - supports-color
       - utf-8-validate
-
-  '@shopify/ui-extensions@2026.1.5(@preact/signals@2.11.4(preact@10.29.8))(preact@10.29.8)':
-    dependencies:
-      ts-morph: 25.0.1
-    optionalDependencies:
-      '@preact/signals': 2.11.4(preact@10.29.8)
-      preact: 10.29.8(preact-render-to-string@6.8.3)
 
   '@shopify/ui-extensions@2026.10.0(@preact/signals@2.11.4(preact@10.29.8))(preact@10.29.8)':
     dependencies:
