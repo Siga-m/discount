@@ -18,5 +18,10 @@
     "@shopify/plugin-cloudflare"
   ],
   "author": "DIX IT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@graphql-codegen/cli": "^8.0.0",
+    "@graphql-codegen/typescript": "^7.0.1",
+    "@graphql-codegen/typescript-operations": "^7.0.1"
+  }
 }
