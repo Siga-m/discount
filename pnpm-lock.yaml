@@ -39,7 +39,7 @@ importers:
         specifier: ~2026.10.0
         version: 2026.10.0(@preact/signals@2.11.4(preact@10.29.8))(preact@10.29.8)
 
-  extensions/discount-customer:
+  extensions/discount-tier-new:
     dependencies:
       '@shopify/shopify_function':
         specifier: ^2.0.1
